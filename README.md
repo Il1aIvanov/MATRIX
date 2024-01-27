@@ -52,33 +52,10 @@ int s21_mult_number(matrix_t *A, double number, matrix_t *result);
 int s21_mult_matrix(matrix_t *A, matrix_t *B, matrix_t *result);
 ```
 
-Произведением матрицы A = m × n на число λ называется матрица B = m × n = λ × A, элементы которой определяются равенствами B = λ × A(i,j).
-
-```
-                1 2 3   2 4 6   
-B = 2 × A = 2 × 0 4 2 = 0 8 4 
-                2 3 4   4 6 8   
-```
-
-Произведением матрицы A = m × k на матрицу B = k × n называется матрица C = m × n = A × B размера m × n, элементы которой определяются равенством C(i,j) = A(i,1) × B(1,j) + A(i,2) × B(2,j) + … + A(i,k) × B(k,j).
-
-```
-            1 4    1 -1  1    9 11 17   
-C = A × B = 2 5  × 2  3  4 = 12 13 22 
-            3 6              15 15 27
-```
-
-Компоненты матрицы С вычисляются следующим образом:
-
-```		
-```
-
 ### Транспонирование матрицы (transpose)
 
 ```c
 int s21_transpose(matrix_t *A, matrix_t *result);
-```
-```
 ```
 
 ### Минор матрицы и матрица алгебраических дополнений (calc_complements)
@@ -87,47 +64,16 @@ int s21_transpose(matrix_t *A, matrix_t *result);
 int s21_calc_complements(matrix_t *A, matrix_t *result);
 ```
 
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
 ### Определитель матрицы (determinant)
 
 ```c
 int s21_determinant(matrix_t *A, double *result);
 ```
 
-```
-```
-
 ### Обратная матрица (inverse_matrix)
 
 ```c
 int s21_inverse_matrix(matrix_t *A, matrix_t *result);
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-
-```
 ```
 
 # Chapter III
